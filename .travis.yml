@@ -1,6 +1,6 @@
 language: java
 
-install: ant junit:junit:3.8.2
+install: test junit:junit:3.8.2
 
 script:
   - ant -f build.xml

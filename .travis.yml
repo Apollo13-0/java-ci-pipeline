@@ -1,7 +1,6 @@
 language: java
 
-before_install:
-  - sudo apt-get -y install junit:junit:3.8.2
+install: ant junit:junit:3.8.2
 
 script:
   - ant -f build.xml

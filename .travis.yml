@@ -3,5 +3,5 @@ language: java
 
 script:
   - ant -f build.xml
-  - javac TestCalculator.java
+  - javac src\TestCalculator.java
   - java TestCalculator

@@ -6,7 +6,6 @@ public class TestCalculator extends TestCase {
     public void newCalculator (){
         calculator = new Calculator();
     }
-
     public void testAddition1 (){
         newCalculator();
         assertTrue(calculator.addition(3, 3) == (3 + 3));

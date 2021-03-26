@@ -3,5 +3,10 @@ language: java
 
 script:
   - ant -f build.xml
+
+after_script:
   - javac src/TestCalculator.java
   - java TestCalculator
+
+-notifications:
+  -  email: false

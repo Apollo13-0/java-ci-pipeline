@@ -3,4 +3,6 @@ rvm:
   - 2.2
   - jruby
 
-install: ./install-dependencies.sh
+install:
+  - bundle install --path vendor/bundle
+  - npm install

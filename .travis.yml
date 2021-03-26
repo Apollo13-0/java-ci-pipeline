@@ -1,2 +1,4 @@
 language: java
-install: ant -f build.xml
+
+
+script: ant -f build.xml

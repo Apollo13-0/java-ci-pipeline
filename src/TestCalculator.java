@@ -16,6 +16,10 @@ public class TestCalculator extends TestCase {
         newCalculator();
         assertEquals(8, calculator.addition(2,6));
     }
+    public void testAddition3 (){
+        newCalculator();
+        assertTrue(calculator.addition(3, 4) == (3 + 4));
+    }
 
     public void testSubtraction1 (){
         newCalculator();

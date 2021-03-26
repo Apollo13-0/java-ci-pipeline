@@ -1,8 +1,13 @@
-language: ruby
-rvm:
-  - 2.7.2p137
-  - jruby
 
-install:
-  - bundle install --path vendor/bundle
-  - npm install
+language: java
+sudo: false
+
+cache:
+  directories:
+    - "$HOME/.m2"
+
+before_cache:
+  - rm -rf $HOME/.m2/repository/com/autentia/traviscodacy
+
+jdk:
+  - oraclejdk8
